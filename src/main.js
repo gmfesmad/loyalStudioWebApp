@@ -16,7 +16,8 @@ function toggleNav(forceClose) {
   navToggle.setAttribute('aria-expanded', String(isOpen));
   navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
   navMenu.classList.toggle('nav--open', isOpen);
-  document.body.style.overflow = isOpen ? 'hidden' : '';
+  header.classList.toggle('header--nav-open', isOpen);
+  document.body.classList.toggle('nav-open', isOpen);
 }
 
 navToggle.addEventListener('click', () => toggleNav());

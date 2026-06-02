@@ -161,6 +161,12 @@ textarea {
   width: 100%;
 }
 
+body.nav-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 /* ── Header ── */
 .header {
   position: fixed;
@@ -169,16 +175,31 @@ textarea {
   right: 0;
   z-index: 100;
   height: var(--header-height);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: rgba(12, 12, 12, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid transparent;
-  transition: border-color var(--transition), background var(--transition);
+  transition: background var(--transition);
 }
 
 .header--scrolled {
   border-bottom-color: var(--color-border);
+}
+
+.header--scrolled::before {
   background: rgba(12, 12, 12, 0.95);
+}
+
+.header--nav-open::before {
+  background: rgba(12, 12, 12, 0.97);
 }
 
 .header__inner {
@@ -191,7 +212,8 @@ textarea {
 .logo {
   display: flex;
   align-items: center;
-  z-index: 101;
+  position: relative;
+  z-index: 151;
   flex-shrink: 0;
 }
 
@@ -213,12 +235,13 @@ textarea {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
+  position: relative;
   width: 44px;
   height: 44px;
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 101;
+  z-index: 151;
   padding: 8px;
 }
 
@@ -248,18 +271,22 @@ textarea {
 .nav {
   position: fixed;
   inset: 0;
-  background: rgba(12, 12, 12, 0.97);
+  z-index: 150;
+  background: var(--color-bg);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--header-height) 1.25rem 2rem;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: opacity var(--transition), visibility var(--transition);
 }
 
 .nav--open {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .nav__list {
@@ -300,10 +327,13 @@ textarea {
 
   .nav {
     position: static;
+    z-index: auto;
+    inset: auto;
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
     background: none;
-    inset: auto;
+    padding: 0;
   }
 
   .nav__list {
