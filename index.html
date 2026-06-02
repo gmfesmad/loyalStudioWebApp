@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loyal Studio — Estúdio de personal training dedicado a transformar o seu corpo e mente com treino personalizado."
+    />
+    <title>Loyal Studio | Personal Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#inicio" class="logo" aria-label="Loyal Studio — Início">
+          <img
+            src="./src/assets/logo.png"
+            alt="Loyal Studio"
+            class="logo__img"
+            width="52"
+            height="52"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" id="nav-menu" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li><a href="#sobre" class="nav__link">Sobre Nós</a></li>
+            <li><a href="#servicos" class="nav__link">Serviços</a></li>
+            <li><a href="#equipa" class="nav__link">Equipa</a></li>
+            <li><a href="#adesao" class="nav__link">Adesão</a></li>
+            <li><a href="#contactos" class="nav__link nav__link--cta">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="inicio">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__content">
+          <p class="hero__eyebrow">Personal Training · Porto</p>
+          <h1 class="hero__title">
+            Treino feito<br />
+            <span class="hero__title-accent">para si.</span>
+          </h1>
+          <p class="hero__subtitle">
+            No Loyal Studio, cada sessão é desenhada à medida dos seus objetivos.
+            Força, resistência e confiança — com acompanhamento dedicado.
+          </p>
+          <div class="hero__actions">
+            <a href="#adesao" class="btn btn--primary">Ver Planos</a>
+            <a href="#contactos" class="btn btn--outline">Agendar Sessão</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__value">500+</span>
+              <span class="stat__label">Clientes transformados</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">8</span>
+              <span class="stat__label">Anos de experiência</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">100%</span>
+              <span class="stat__label">Treino personalizado</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Nós -->
+      <section class="section section--about" id="sobre">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__eyebrow">Quem Somos</span>
+            <h2 class="section__title">Sobre Nós</h2>
+          </div>
+          <div class="about__grid">
+            <div class="about__text">
+              <p class="about__lead">
+                O Loyal Studio nasceu da convicção de que o fitness verdadeiro
+                começa com relações de confiança — entre treinador e cliente,
+                entre esforço e resultado.
+              </p>
+              <p>
+                Somos um estúdio boutique de personal training em Lisboa,
+                focado em atenção individualizada. Sem multidões, sem
+                distrações — apenas você, o seu treinador e os seus objetivos.
+              </p>
+              <p>
+                Acreditamos que a consistência vence a intensidade. Por isso,
+                construímos planos sustentáveis que se adaptam à sua vida,
+                não o contrário.
+              </p>
+              <ul class="about__values">
+                <li>
+                  <span class="about__value-icon" aria-hidden="true">◆</span>
+                  <div>
+                    <strong>Compromisso</strong>
+                    <span>Acompanhamos cada passo da sua jornada</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="about__value-icon" aria-hidden="true">◆</span>
+                  <div>
+                    <strong>Excelência</strong>
+                    <span>Metodologia baseada em ciência e experiência</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="about__value-icon" aria-hidden="true">◆</span>
+                  <div>
+                    <strong>Comunidade</strong>
+                    <span>Um espaço acolhedor para todos os níveis</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="about__visual" aria-hidden="true">
+              <div class="about__image-placeholder">
+                <span>Loyal Studio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços -->
+      <section class="section section--services" id="servicos">
+        <div class="container">
+          <div class="section__header section__header--center">
+            <span class="section__eyebrow">O Que Oferecemos</span>
+            <h2 class="section__title">Serviços</h2>
+            <p class="section__desc">
+              Soluções completas para alcançar os seus objetivos de fitness e bem-estar.
+            </p>
+          </div>
+          <div class="services__grid">
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M6.5 6.5h11M6.5 17.5h11M4 12h16" stroke-linecap="round"/>
+                  <circle cx="6.5" cy="6.5" r="2.5"/>
+                  <circle cx="17.5" cy="17.5" r="2.5"/>
+                </svg>
+              </div>
+              <h3 class="service-card__title">Personal Training</h3>
+              <p class="service-card__desc">
+                Sessões individuais com plano de treino personalizado, ajustado
+                semanalmente conforme a sua evolução e feedback.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 3v18M3 12h18" stroke-linecap="round"/>
+                  <circle cx="12" cy="12" r="9"/>
+                </svg>
+              </div>
+              <h3 class="service-card__title">Treino em Dupla</h3>
+              <p class="service-card__desc">
+                Treine com um amigo ou parceiro. Motivação partilhada com
+                a atenção personalizada que o Loyal Studio garante.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 19h16M7 19V9l5-4 5 4v10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-card__title">Avaliação Física</h3>
+              <p class="service-card__desc">
+                Análise completa de composição corporal, mobilidade e capacidade
+                funcional para definir a linha de base do seu programa.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-card__title">Nutrição & Lifestyle</h3>
+              <p class="service-card__desc">
+                Orientação nutricional integrada no seu plano de treino para
+                maximizar resultados de forma saudável e sustentável.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/>
+                  <path d="M8 7V5a4 4 0 018 0v2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="service-card__title">Treino Online</h3>
+              <p class="service-card__desc">
+                Acompanhamento remoto com planos de treino, check-ins semanais
+                e suporte contínuo — onde quer que esteja.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke-linecap="round"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="service-card__title">Small Group</h3>
+              <p class="service-card__desc">
+                Grupos reduzidos de até 4 pessoas. Energia coletiva com
+                correções individuais em cada exercício.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Equipa -->
+      <section class="section section--team" id="equipa">
+        <div class="container">
+          <div class="section__header section__header--center">
+            <span class="section__eyebrow">Profissionais Dedicados</span>
+            <h2 class="section__title">Equipa</h2>
+            <p class="section__desc">
+              Treinadores certificados, apaixonados por ajudar cada cliente a
+              alcançar o seu melhor.
+            </p>
+          </div>
+          <div class="team__grid">
+            <article class="team-card">
+              <div class="team-card__photo">
+                <img
+                  src="./src/assets/joaoPic.png"
+                  alt="João Leal"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="team-card__name">João Leal</h3>
+              <p class="team-card__role">Fundador & Head Coach</p>
+              <p class="team-card__bio">
+                Especialista em reabilitação e performance atlética.
+              </p>
+              <div class="team-card__tags">
+                <span>Força</span>
+                <span>Reabilitação</span>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card__photo">
+                <img
+                  src="./src/assets/catiaPic.png"
+                  alt="Cátia Silva"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="team-card__name">Cátia Silva</h3>
+              <p class="team-card__role">Instrutora de Pilates</p>
+              <p class="team-card__bio">
+                Foco em treino funcional e bem-estar feminino. Certificada em
+                nutrição desportiva e yoga terapêutico.
+              </p>
+              <div class="team-card__tags">
+                <span>Pilates Clínico</span>
+                <span>Reabilitação</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Adesão -->
+      <section class="section section--pricing" id="adesao">
+        <div class="container">
+          <div class="section__header section__header--center">
+            <span class="section__eyebrow">Invista em Si</span>
+            <h2 class="section__title">Adesão</h2>
+            <p class="section__desc">
+              Planos flexíveis para se adaptarem ao seu ritmo e aos seus objetivos.
+            </p>
+          </div>
+          <div class="pricing__grid">
+            <article class="pricing-card">
+              <h3 class="pricing-card__name">Essencial</h3>
+              <p class="pricing-card__sessions">4 sessões / mês</p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">120€</span>
+                <span class="pricing-card__period">/ mês</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li>Personal training 1:1</li>
+                <li>Plano de treino personalizado</li>
+                <li>Acesso à app de acompanhamento</li>
+                <li>Avaliação inicial incluída</li>
+              </ul>
+              <a href="#contactos" class="btn btn--outline btn--block" data-plan="essencial">Escolher Plano</a>
+            </article>
+            <article class="pricing-card pricing-card--featured">
+              <span class="pricing-card__badge">Mais Popular</span>
+              <h3 class="pricing-card__name">Performance</h3>
+              <p class="pricing-card__sessions">8 sessões / mês</p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">220€</span>
+                <span class="pricing-card__period">/ mês</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li>Tudo do plano Essencial</li>
+                <li>Acompanhamento nutricional básico</li>
+                <li>Check-in semanal com o treinador</li>
+                <li>Prioridade no agendamento</li>
+              </ul>
+              <a href="#contactos" class="btn btn--primary btn--block" data-plan="performance">Escolher Plano</a>
+            </article>
+            <article class="pricing-card">
+              <h3 class="pricing-card__name">Elite</h3>
+              <p class="pricing-card__sessions">12 sessões / mês</p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">300€</span>
+                <span class="pricing-card__period">/ mês</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li>Tudo do plano Performance</li>
+                <li>Plano nutricional completo</li>
+                <li>Acesso a small group sessions</li>
+                <li>Suporte via WhatsApp 7 dias/semana</li>
+              </ul>
+              <a href="#contactos" class="btn btn--outline btn--block" data-plan="elite">Escolher Plano</a>
+            </article>
+          </div>
+          <p class="pricing__note">
+            Sessão avulsa disponível por 35€. Primeira sessão experimental gratuita para novos clientes.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contactos -->
+      <section class="section section--contact" id="contactos">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__eyebrow">Fale Connosco</span>
+            <h2 class="section__title">Contactos</h2>
+          </div>
+          <div class="contact__grid">
+            <div class="contact__info">
+              <p class="contact__lead">
+                Pronto para começar? Entre em contacto connosco e agende a sua
+                sessão experimental gratuita.
+              </p>
+              <ul class="contact__details">
+                <li>
+                  <span class="contact__detail-label">Morada</span>
+                  <span>Rua de São Tiago 74 loja 77, 4585-513 Rebordosa</span>
+                </li>
+                <li>
+                  <span class="contact__detail-label">Telefone</span>
+                  <a href="tel:+351934129946">+351 934 129 946</a>
+                </li>
+                <li>
+                  <span class="contact__detail-label">Horário</span>
+                  <span>Seg–Sex: 07:00–21:00 · Sáb: 09:00–14:00</span>
+                </li>
+              </ul>
+              <div class="contact__social">
+                <a
+                  href="https://www.instagram.com/loyalfitnesstudio/"
+                  class="contact__social-link"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+                <a
+                  href="https://wa.me/351934129946"
+                  class="contact__social-link"
+                  aria-label="WhatsApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp</a
+                >
+              </div>
+            </div>
+            <form class="contact__form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="O seu nome" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="email@exemplo.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+351 900 000 000" />
+              </div>
+              <div class="form-group">
+                <label for="plan">Plano de interesse</label>
+                <select id="plan" name="plan">
+                  <option value="">Selecione um plano</option>
+                  <option value="essencial">Essencial</option>
+                  <option value="performance">Performance</option>
+                  <option value="elite">Elite</option>
+                  <option value="avulsa">Sessão Avulsa</option>
+                  <option value="outro">Outro / Dúvida</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4" placeholder="Conte-nos sobre os seus objetivos..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Enviar Mensagem</button>
+              <p class="form__success" id="form-success" hidden>
+                Obrigado! Recebemos a sua mensagem e entraremos em contacto em breve.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img
+            src="./src/assets/logo.png"
+            alt="Loyal Studio"
+            class="logo__img logo__img--sm"
+            width="40"
+            height="40"
+          />
+        </div>
+        <p class="footer__copy">&copy; 2026 Loyal Studio. Todos os direitos reservados.</p>
+        <nav class="footer__nav" aria-label="Navegação do rodapé">
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#equipa">Equipa</a>
+          <a href="#adesao">Adesão</a>
+          <a href="#contactos">Contactos</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
