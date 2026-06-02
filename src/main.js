@@ -1,3 +1,5 @@
+import './styles/main.css';
+
 const header = document.getElementById('header');
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
